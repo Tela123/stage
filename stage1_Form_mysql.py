@@ -50,8 +50,8 @@ def enregistrer():
         phone_entry.delete(0, tk.END)
         age_entry.delete(0, tk.END)
         #je gere les cas d'erreurs avec les exception
-    except mysql.connector.IntegrityError:
-        messagebox.showerror("Erreur ", "email deja utilise")
+   # except mysql.connector.IntegrityError:
+     #   messagebox.showerror("Erreur ", "email deja utilise")
     except mysql.connector.Error as err:
         messagebox.showerror("Erreur MySQL", f"{err}")
 
